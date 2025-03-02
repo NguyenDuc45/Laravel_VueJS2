@@ -1,0 +1,29 @@
+composer create-project laravel/laravel:^10.0 app_name => Tạo dự án laravel
+
+composer install => Cài đặt lại tất cả các thư viện hệ thống sử dụng
+composer update => Cập nhật lại các thư viện hệ thống sử dụng
+php artisan ser => Chạy dự án
+php artisan key:generate => Generate ra APP_KEY trong file env
+
+php artisan make:migration migration_name => Tạo file migration
+    Tên bảng là danh từ số nhiều (TV)
+php artisan migrate => Chạy các migration
+php artisan migrate:rollback => Rollback lại các thao tác cuối cùng của migration
+php artisan migrate:reset => Rollback lại tất cả các thao tác của migration
+php artisan migrate:refresh => Rollback lại tất cả các thao tác của migration, sau đó tự động chạy migrate
+
+php artisan make:seeder seeder_name => Tạo 1 file seeder để tạo dữ liệu mẫu
+php artisan db:seed => Chạy toàn bộ seeder
+php artisan db:seed --class=seeder_name => Chạy 1 seeder
+php artisan migrate:fresh --seed => Vừa reset, migrate và chạy seeder cùng lúc
+
+php artisan make:controller controller_name => Tạo 1 file controller
+
+php artisan route:list => Hiển thị danh sách toàn bộ route có trong dự án
+
+php artisan storage:link => Tạo liên kết các file để hiển thị ra người dùng
+
+php artisan make:request request_name => Tạo 1 file request để thực hiện việc validate
+
+php artisan make:model model_name --all => Tạo tất cả
+php artisan make:resource resource_name => Tạo 1 file để hiển thị dữ liệu API
